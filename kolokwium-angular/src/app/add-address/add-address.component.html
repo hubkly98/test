@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <h2>Dodaj Address</h2>
+    <form>
+    <label>Podaj id</label>
+    <input type="number" formControlName="id" #idForm>
+    <label>Podaj street</label>
+    <input type="text" formControlName="street" #streetForm>
+    <label>Podaj ZipCode</label>
+    <input type="text" formControlName="zipCode" #zipCodeForm>
+    <label>Podaj number</label>
+    <input type="number" formControlName="number" #numberForm>
+    <label>Podaj city</label>
+    <input type="text" formControlName="city" #cityForm>
+    <button (click)="addAddress(idForm.value,streetForm.value,zipCodeForm.value,numberForm.value,cityForm.value)">Add Address</button>
+    </form>
+    </div>

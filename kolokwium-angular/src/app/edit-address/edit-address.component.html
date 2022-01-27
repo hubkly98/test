@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <h2>Edytuj address</h2>
+    <form>
+    <label>Podaj id</label>
+    <input type="number" formControlName="id" #idForm>
+    <label>Podaj street</label>
+    <input type="text" formControlName="firstName" #streetForm>
+    <label>Podaj zipCode</label>
+    <input type="text" formControlName="lastName" #zipCodeForm>
+    <label>Podaj number</label>
+    <input type="number" formControlName="age" #numberForm>
+    <label>Podaj city</label>
+    <input type="text" formControlName="city" #cityForm>
+    <button (click)="editAddress(idForm.value,streetForm.value,zipCodeForm.value,numberForm.value,cityForm.value)">Edit
+    Address</button>
+    </form>
+    </div>
+    
